@@ -1,0 +1,28 @@
+seed: 42
+task: pet_classification
+output_dir: runs/task1_vit_tiny
+data:
+  root: data/oxford_iiit_pet
+  val_ratio: 0.15
+  image_size: 224
+  num_workers: 4
+  download: true
+model:
+  arch: vit_tiny_patch16_224
+  pretrained: true
+  attention: none
+  num_classes: 37
+train:
+  epochs: 30
+  batch_size: 32
+  optimizer: adamw
+  lr_backbone: 0.00002
+  lr_head: 0.0002
+  weight_decay: 0.05
+  scheduler: cosine
+  amp: true
+logging:
+  backend: csv
+  project: cv-hw2-task1
+  run_name: vit-tiny
+

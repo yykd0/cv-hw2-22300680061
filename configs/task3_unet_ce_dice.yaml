@@ -1,0 +1,27 @@
+seed: 42
+task: pet_segmentation
+output_dir: runs/task3_unet_ce_dice
+data:
+  root: data/oxford_iiit_pet
+  val_ratio: 0.15
+  image_size: 256
+  num_workers: 4
+  download: true
+model:
+  in_channels: 3
+  num_classes: 3
+  base_channels: 32
+train:
+  epochs: 40
+  batch_size: 16
+  optimizer: adamw
+  lr: 0.0003
+  weight_decay: 0.0001
+  scheduler: cosine
+  loss: ce_dice
+  amp: true
+logging:
+  backend: csv
+  project: cv-hw2-task3
+  run_name: unet-ce-dice
+

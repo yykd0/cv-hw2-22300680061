@@ -1,0 +1,27 @@
+seed: 42
+task: pet_classification
+output_dir: runs/final_task1_resnet18_imagenet
+data:
+  root: data/oxford_iiit_pet
+  val_ratio: 0.15
+  image_size: 224
+  num_workers: 6
+  download: false
+model:
+  arch: resnet18
+  pretrained: true
+  attention: none
+  num_classes: 37
+train:
+  epochs: 8
+  batch_size: 96
+  optimizer: adamw
+  lr_backbone: 3.0e-05
+  lr_head: 0.0003
+  weight_decay: 0.0001
+  scheduler: cosine
+  amp: true
+logging:
+  backend: csv
+  project: cv-hw2-task1
+  run_name: final_task1_resnet18_imagenet

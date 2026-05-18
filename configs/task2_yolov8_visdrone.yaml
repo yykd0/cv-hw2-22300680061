@@ -1,0 +1,11 @@
+model: yolov8n.pt
+data: data/visdrone_yolo/visdrone.yaml
+epochs: 80
+imgsz: 640
+batch: 16
+optimizer: AdamW
+lr0: 0.001
+weight_decay: 0.0005
+project: runs
+name: task2_yolov8n_visdrone
+device: 0

@@ -1,15 +1,12 @@
 # 计算机视觉期中作业 HW2
 
-姓名：邓凯源  
-学号：22300680061
-
 本仓库对应三项实验任务：
 
 1. 在 Oxford-IIIT Pet Dataset 上微调 ImageNet 预训练分类模型，并比较 Baseline、超参数、从零训练、注意力模块和轻量级 Transformer。
 2. 在 VisDrone 数据集上训练 YOLOv8 检测模型，并完成视频多目标跟踪、遮挡/ID 跳变分析和越线计数。
 3. 从零搭建 U-Net，在 Oxford-IIIT Pet 三分类 trimap 分割任务上比较 Cross-Entropy、Dice Loss 和组合损失。
 
-模型权重与任务二跟踪视频按作业要求通过网盘提交，不放入 GitHub 仓库。报告中填写本仓库链接和网盘下载链接。
+> 报告首页需要填写小组成员姓名、学号和分工。最终提交前，还需要把本仓库上传到 public GitHub repo，并把训练好的权重上传到百度云或 Google Drive，然后把两个链接写入报告。
 
 ## 目录结构
 
@@ -18,8 +15,7 @@ cv_hw2_submit/
   configs/                 # 三个任务的实验配置
   scripts/                 # 训练、数据转换、跟踪计数脚本
   src/cvhw2/               # 可复用数据集、模型、损失、指标代码
-  tools/                   # 批量运行、绘图和报告辅助脚本
-  docs/                    # 作业要求摘要
+  report/                  # 实验报告 Markdown/PDF 与图表
   SUBMISSION_CHECKLIST.md  # 提交前核对清单
 ```
 
@@ -105,8 +101,13 @@ python scripts/train_pet_seg.py --config configs/task3_unet_ce_dice.yaml
 
 脚本会输出验证集 mIoU、每类 IoU、loss 曲线 CSV 和最优权重。
 
-## 提交说明
+## 报告生成
 
-- GitHub 仓库：用于提交代码、配置和 README。
-- 模型权重：上传 `HW2_model_weights_and_video_22300680061.zip` 到百度云或 Google Drive。
-- 实验报告：将中文 DOCX 填入 GitHub 和网盘链接后另存为 PDF 提交。
+报告草稿位于 `report/HW2_report.md`。生成 PDF：
+
+```powershell
+python tools/make_report_pdf.py
+```
+
+生成后检查 `report/HW2_report.pdf`，并把实际训练曲线截图、GitHub repo 链接、模型权重网盘链接替换到报告中。
+
