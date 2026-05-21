@@ -5,7 +5,7 @@
 打开 `HW2_report_CHINESE_22300680061.docx`，确认“提交链接”表格中的两项链接：
 
 - Public GitHub repo 链接：`https://github.com/yykd0/cv-hw2-22300680061`
-- 模型权重网盘下载链接：`https://docs.google.com/document/d/1z7ZhQh3PwEsXxTC6VjppRb5yyMnuQwc0uVt3XsYJCj8/edit?usp=drivesdk`
+- 模型权重网盘下载链接：`https://docs.google.com/document/d/1SMx5qoKpEf6xg77ipiDkDCZbQG9WRBvwIZ9UzEVqCy0/edit?usp=drivesdk`
 
 然后用 Word 或 WPS 另存为 PDF，建议命名为：
 
