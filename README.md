@@ -3,13 +3,12 @@
 姓名：邓凯源  
 学号：22300680061
 
-本仓库为计算机视觉 HW2 的实验代码与结果整理，包含图像分类、目标检测与多目标跟踪、语义分割三个部分。
+本仓库整理了计算机视觉 HW2 的实验代码、配置文件、训练脚本、结果文件和实验报告，内容覆盖图像分类、目标检测与多目标跟踪、语义分割三个任务。
 
-## 实验任务
+## 代码与结果链接
 
-1. Oxford-IIIT Pet 图像分类：基于 ResNet-18 进行 ImageNet 预训练微调，并与随机初始化、SE、CBAM、ViT-Tiny 等设置对比。
-2. VisDrone 目标检测与多目标跟踪：使用 YOLOv8 训练检测模型，并在 10-30 秒视频上输出 Bounding Box、类别、Tracking ID、遮挡片段分析和虚拟线计数。
-3. Oxford-IIIT Pet 语义分割：从零实现 U-Net，在 trimap 三分类任务上比较 Cross-Entropy、Dice Loss 和 CE+Dice。
+- GitHub 仓库：https://github.com/yykd0/cv-hw2-22300680061
+- 模型权重与任务二视频：https://drive.google.com/file/d/1nmT0xaLfUJzoOaF6HLzBV9tynE4U50vw/view?usp=drive_link
 
 ## 目录结构
 
@@ -19,7 +18,7 @@ scripts/                 训练、数据转换、跟踪计数脚本
 src/cvhw2/               数据集、模型、损失函数和指标代码
 tools/                   批量运行、绘图和报告辅助脚本
 report/                  实验报告
-weights_parts/           模型权重与任务二视频结果分卷
+weights_parts/           权重与任务二视频压缩包的 GitHub 分卷备份
 ```
 
 ## 环境配置
@@ -31,7 +30,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-GPU 环境下可根据 CUDA 版本安装对应的 PyTorch wheel。
+GPU 环境下根据 CUDA 版本安装对应的 PyTorch wheel。
 
 ## 任务 1：图像分类
 
@@ -61,4 +60,8 @@ python scripts/train_pet_seg.py --config configs/task3_unet_ce_dice.yaml
 
 ## 模型权重
 
-模型权重和任务二跟踪视频保存在 `weights_parts/` 目录中。下载全部分卷后，按照 `weights_parts/README.md` 合并为完整压缩包。
+完整模型权重和任务二视频结果已上传至 Google Drive：
+
+https://drive.google.com/file/d/1nmT0xaLfUJzoOaF6HLzBV9tynE4U50vw/view?usp=drive_link
+
+`weights_parts/` 中保留了同一压缩包的 GitHub 分卷备份。
