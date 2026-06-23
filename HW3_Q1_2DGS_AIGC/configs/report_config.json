@@ -1,0 +1,21 @@
+{
+  "title": "HW3 Q1: 2D Gaussian Splatting and AIGC-based 3D Asset Generation",
+  "author": "Deng Kaiyuan",
+  "student_id": "22300680061",
+  "deadline": "2026-06-23 23:59",
+  "object_a": {
+    "name": "Mip-NeRF 360 bicycle",
+    "method": "COLMAP camera poses and 2D Gaussian Splatting reconstruction",
+    "dataset": "Mip-NeRF 360 bicycle"
+  },
+  "object_b": {
+    "name": "Porcelain teapot",
+    "method": "threestudio DreamFusion with Stable Diffusion SDS",
+    "prompt": "a DSLR photo of a porcelain teapot with blue floral patterns, isolated object, white background"
+  },
+  "object_c": {
+    "name": "Red ceramic dragon figurine",
+    "method": "Magic123 coarse-to-fine image-to-3D",
+    "prompt": "A high-resolution DSLR image of a small red ceramic dragon figurine"
+  }
+}
