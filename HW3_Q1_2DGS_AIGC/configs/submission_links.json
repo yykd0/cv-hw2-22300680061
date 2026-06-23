@@ -1,0 +1,15 @@
+{
+  "github_repo": "https://github.com/yykd0/cv-hw2-22300680061/tree/main/HW3_Q1_2DGS_AIGC",
+  "code_package": "https://drive.google.com/file/d/1VuTmltaHruS2Jro1Rg3sYaLhV22_6Toy/view?usp=drivesdk",
+  "drive_folder": "https://drive.google.com/drive/folders/1Tjc_XiH_-onaQR1Fd1fH3aTcSFykcsor",
+  "weights_folder": "https://drive.google.com/drive/folders/1Tjc_XiH_-onaQR1Fd1fH3aTcSFykcsor",
+  "videos_folder": "https://drive.google.com/drive/folders/1Tjc_XiH_-onaQR1Fd1fH3aTcSFykcsor",
+  "object_a_weights": "2DGS ply split parts: part01 https://drive.google.com/file/d/1wQTRFVgDVNdgbt9KEy2jmJVdo9SqYRcR/view?usp=drivesdk ; part02 https://drive.google.com/file/d/11YmUMYHWah30eB1Dnj4ggGCZ17k3RNtr/view?usp=drivesdk ; part03 https://drive.google.com/file/d/16cBQTwVs5qQYfZ1HCpqAH6rvRxsAOdRF/view?usp=drivesdk",
+  "object_b_weights": "threestudio last.ckpt split parts: part01 https://drive.google.com/file/d/1qVtWgcq52MOsBBAIs9lkyXG8Rvw7znx9/view?usp=drivesdk ; part02 https://drive.google.com/file/d/1Vxqf7uE4uzif_eyyB1MJAzmBWJ1liaW8/view?usp=drivesdk",
+  "object_c_weights": "https://drive.google.com/file/d/1tsI1MqlOCuGVUCqB3Ekn56vgTWoyMLFH/view?usp=drivesdk",
+  "object_c_mesh": "https://drive.google.com/file/d/12zHDbkUXK7aQ1-a7p2-LgoJWjGfwE5L3/view?usp=drivesdk",
+  "video_2dgs": "https://drive.google.com/file/d/1pg9ua8bsPP_vdQlkD-mWijBbRJiqbBmK/view?usp=drivesdk",
+  "video_threestudio": "https://drive.google.com/file/d/1MAib0o2bNJHGH2Q7D9maDlpI1_BJWeZS/view?usp=drivesdk",
+  "video_magic123": "https://drive.google.com/file/d/12mdJ-1_0av38PE490JBImp2UykCaT2WY/view?usp=drivesdk",
+  "combined_submission_drive": "https://drive.google.com/file/d/1m2PKgN1OZqZsh1un1hY5UCgXK6mIQQND/view?usp=drivesdk"
+}
